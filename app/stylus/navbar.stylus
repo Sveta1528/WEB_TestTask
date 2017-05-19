@@ -1,0 +1,43 @@
+logo_size = 45px
+
+.navbar__container{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 70px;
+  margin-bottom: 30px;
+
+  &__logo img{
+      height: logo_size;
+      width : logo_size;
+  }
+
+  &__nav {
+    list-style: none;
+    li { display: inline-block; }
+
+    &__item {
+      text-decoration: none;
+      margin: 15px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #858585;
+      transition: .5s;
+
+       &:hover, &:focus {
+        color: #1abb9c;
+        cursor: pointer;
+        transition: .5s;
+      }
+    }
+}
+}
+
+.navbar {
+  background: #f5f5f5;
+  min-width: 320px;
+}
