@@ -1,0 +1,174 @@
+.process{
+  background-image: url(../img/process.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 550px;
+  margin-bottom: 80px;
+  margin-top: 50px;
+}
+
+.process__content{
+  display: flex;
+  flex-flow: column;
+  justify-content:space-between;
+  width: 1200px;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+
+  &__text{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: medium;
+    color: #d0d0d0;
+    margin-bottom: 10px;
+    max-width: 850px;
+    line-height: 2;
+  }
+}
+
+.process__content__header{
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #d0d0d0;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  &:before,
+  &:after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 90px;
+      height: 1px;
+      background-color: #777777;
+      position: relative;
+  }
+  &:before {
+      margin-left: -100%;
+      left: -14px;
+  }
+  &:after {
+      margin-right: -100%;
+      right: -14px;
+  }
+}
+
+
+
+.process__content__items{
+    display: flex;
+    flex-flow: row;
+    justify-content:space-between;
+    width: 1200px;
+    margin-top: 60px;
+}
+
+.right__line{
+    &:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 170px;
+        height: 1px;
+        background-color: #777777;
+        position: relative;
+    }
+    &:after {
+        margin-right: -100%;
+        right: -100px;
+        margin-top: 50px;
+    }
+}
+
+
+.process__content__items__item{
+display: flex;
+flex-flow: column;
+justify-content:space-between;
+width: 200px;
+align-items: center;
+margin: 0 auto;
+
+
+&__text{
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #dddddd;
+  margin-bottom: 10px;
+  width: 200px;
+  line-height: 2;
+}
+&__ideas{
+  margin-bottom: 20px;
+  display: block;
+  background: url("../img/process_icons/ideas.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+      &:hover, &:focus{
+        background: url("../img/process_icons/ideas2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: .7s;
+        }
+}
+
+&__rapid{
+  margin-bottom: 20px;
+  display: block;
+  background: url("../img/process_icons/rapid.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+      &:hover, &:focus{
+        background: url("../img/process_icons/rapid2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: .7s;
+        }
+}
+
+&__magic{
+  margin-bottom: 20px;
+  display: block;
+  background: url("../img/process_icons/magic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+      &:hover, &:focus{
+        background: url("../img/process_icons/magic2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: .7s;
+        }
+}
+
+&__award{
+  margin-bottom: 20px;
+  display: block;
+  background: url("../img/process_icons/award.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+      &:hover, &:focus{
+        background: url("../img/process_icons/award2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: .7s;
+        }
+}
+
+}
