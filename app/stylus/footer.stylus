@@ -1,0 +1,19 @@
+.footer{
+  background: #333333;
+}
+
+.footer__text{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  width: 1200px;
+  min-height: 70px;
+  align-items: center;
+  margin: 0 auto;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: medium;
+  color: #cacaca;
+}

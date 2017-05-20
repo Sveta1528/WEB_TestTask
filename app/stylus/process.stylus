@@ -3,7 +3,7 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 550px;
+  min-height: 500px;
   margin-bottom: 80px;
   margin-top: 50px;
 }
@@ -63,7 +63,7 @@
     flex-flow: row;
     justify-content:space-between;
     width: 1200px;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .right__line{

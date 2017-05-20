@@ -147,6 +147,24 @@
   margin-bottom: 10px;
 }
 
+.footer {
+  background: #333;
+}
+.footer__text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1200px;
+  min-height: 70px;
+  align-items: center;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: medium;
+  color: #cacaca;
+}
+
 .hello {
   display: flex;
   flex-flow: column;
@@ -202,6 +220,94 @@
   margin-left: 1050px;
 }
 
+.journal {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 1200px;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.journal__header {
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #616161;
+  margin-bottom: 50px;
+}
+.journal__header:before,
+.journal__header:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 90px;
+  height: 2px;
+  background-color: #e1e1e1;
+  position: relative;
+}
+.journal__header:before {
+  margin-left: -100%;
+  left: -14px;
+}
+.journal__header:after {
+  margin-right: -100%;
+  right: -14px;
+}
+.journal__content {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 1200px;
+  margin-bottom: 70px;
+}
+.journal__content__item {
+  width: 350px;
+}
+.journal__content__item__header {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.journal__content__item__header__data {
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: medium;
+  color: #7a7a7a;
+  width: 30px;
+  border: 1px solid #b1b1b1;
+  padding: 5px;
+  margin-right: 20px;
+}
+.journal__content__item__header__content {
+  text-align: left;
+}
+.journal__content__item__header__content__header {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #606060;
+  margin-bottom: 10px;
+}
+.journal__content__item__header__content__comments {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #1abb9c;
+}
+.journal__content__item__header__text {
+  text-align: left;
+  width: 400px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: medium;
+  color: #7a7a7a;
+}
+
 .navbar__container {
   display: flex;
   justify-content: space-between;
@@ -247,7 +353,7 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 550px;
+  min-height: 500px;
   margin-bottom: 80px;
   margin-top: 50px;
 }
@@ -301,7 +407,7 @@
   flex-flow: row;
   justify-content: space-between;
   width: 1200px;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .right__line:after {
   content: "";
