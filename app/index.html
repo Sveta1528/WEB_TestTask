@@ -5,12 +5,14 @@
     <title>Loom</title>
     <link rel="stylesheet" href="css/main.css"> <!-- Подключаем CSS -->
     <link rel="stylesheet" href="css/normalize.css">
-    <script src="mainjs/fonts.js"></script>
+    <script src="js/fonts.js"></script>
     <script>loadFont('Raleway', 'css/woff.css', 'css/woff2.css')</script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body>
 
+<div id = "nav">
 <div class="navbar">
     <div class = "navbar__container">
       <div class="navbar__container__logo" href="#"><img src="img/logo.png" title="logo"></div>
@@ -24,17 +26,30 @@
     </ul>
   </div>
 </div>
+</div>
 
 
 <div class="hello">
     <div class ="hello__header"> Hello! We are Loom Studio </div>
     <div class ="hello__text"> a creative media agency that believes in the power of creative ideas and great design.</div>
-    <div class ="slider">
-        <img src="img/hello.png">
-        <a class ="slider__prev slider__btn"><</a>
-        <a class ="slider__next slider__btn">></a>
+    <div class ="slider" id="block-for-slider">
+    <div id="viewport">
+        <ul class ="slider__content" id="slidewrapper">
+            <li class="slide"><img src="img/hello.png" alt="1" class="slide-img"></li>
+            <li class="slide"><img src="img/hello.png" alt="2" class="slide-img"></li>
+            <li class="slide"><img src="img/hello.png" alt="3" class="slide-img"></li>
+            <li class="slide"><img src="img/hello.png" alt="4" class="slide-img"></li>
+        </ul>
     </div>
+
+    <div id="prev-next-btns">
+    <div class = "slider_btn slider_btn__prev" id="prev-btn"><</div>
+    <div class = "slider_btn slider_btn__next" id="next-btn">></div>
+    </div>
+
 </div>
+</div>
+<script src="js/main.js"></script>
 
 <div class="do">
     <div class ="do__header"> What we do </div>
