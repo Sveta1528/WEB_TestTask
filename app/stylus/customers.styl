@@ -1,0 +1,123 @@
+ @import "common.styl";
+
+.customers{
+  background-image: url(../img/customers.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  margin-bottom: 80px;
+  margin-top: 50px;
+}
+
+.customers__content{
+  display: flex;
+  flex-flow: column;
+  justify-content:space-between;
+  width: 1200px;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.customers__content__header{
+  header_style(#d0d0d0,  #777777, 90px, 1px)
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.customers_content__text{
+    width: 1000px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #d8d8d8;
+    margin-bottom: 20px;
+}
+
+.customers_content__author{
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #1abb9c;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px)
+{
+  .customers__content{
+    width: 950px;
+  }
+  .customers_content__text{
+    width: 950px;
+  }
+  .customers{
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px)
+{
+  .customers__content{
+    width: 760px;
+  }
+  .customers_content__text{
+    width: 760px;
+  }
+  .customers{
+    min-height: 330px;
+    margin-bottom: 50px;
+  }
+}
+
+
+@media (min-width: 425px) and (max-width: 767px)
+{
+  .customers__content{
+    width: 400px;
+  }
+  .customers_content__text{
+    width: 400px;
+    font-size: 16px;
+  }
+  .customers{
+    min-height: 270px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+  }
+
+  .customers__content__header{
+    margin-bottom: 30px;
+    margin-top: 70px;
+    &:after, &:before
+    {
+      width: 50px;
+    }
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 424px)
+{
+  .customers__content{
+    width: 300px;
+  }
+  .customers_content__text{
+    width: 300px;
+    font-size: 16px;
+  }
+  .customers{
+    min-height: 270px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+  }
+
+  .customers__content__header{
+    margin-bottom: 30px;
+    margin-top: 70px;
+    &:after, &:before
+    {
+      width: 10px;
+    }
+  }
+}

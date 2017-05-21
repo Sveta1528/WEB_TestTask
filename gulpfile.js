@@ -23,7 +23,7 @@ var config = {
 
 
 gulp.task('stylus-to-css', function(){
-    return gulp.src('app/stylus/**/*.stylus')
+    return gulp.src('app/stylus/**/*.styl')
         .pipe(stylus())
         .pipe(concat('main.css'))
         .pipe(gulp.dest('./app/css'))
@@ -60,7 +60,7 @@ gulp.task('jsbuild', function () {
 
 
 gulp.task('watch', ['stylus-to-css'], function() {
-    gulp.watch('app/stylus/**/*.stylus', ['stylus-to-css']);
+    gulp.watch('app/stylus/**/*.styl', ['stylus-to-css']);
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
     // Наблюдение за другими типами файлов

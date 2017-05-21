@@ -1,0 +1,50 @@
+.footer{
+  background: #333333;
+}
+
+.footer__text{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  width: 1200px;
+  min-height: 70px;
+  align-items: center;
+  margin: 0 auto;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: medium;
+  color: #cacaca;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px)
+{
+  .footer__text{
+    width: 1000px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px)
+{
+  .footer__text{
+    width: 700px;
+  }
+
+}
+
+@media (min-width: 425px) and (max-width: 767px)
+{
+  .footer__text{
+    width: 400px;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 424px)
+{
+  .footer__text{
+    width: 300px;
+    font-size: 12px;
+  }
+}

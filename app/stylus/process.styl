@@ -1,0 +1,235 @@
+ @import "common.styl";
+
+.process{
+  background-image: url(../img/process.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  margin-bottom: 80px;
+  margin-top: 50px;
+}
+
+.process__content{
+  display: flex;
+  flex-flow: column;
+  justify-content:space-between;
+  width: 1200px;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+
+  &__text{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: medium;
+    color: #d0d0d0;
+    margin-bottom: 10px;
+    max-width: 850px;
+    line-height: 2;
+  }
+
+  &__header{
+    header_style(#d0d0d0,  #777777, 90px, 2px);
+    margin-bottom: 20px;
+    margin-top: 100px;
+  }
+}
+
+.process__content__items{
+    display: flex;
+    flex-flow: row;
+    justify-content:space-between;
+    -webkit-flex-flow: row wrap;
+    width: 1200px;
+    margin-top: 40px;
+}
+
+right__line()
+  &:after
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 170px;
+        height: 1px;
+        background-color: #777777;
+        position: relative;
+        margin-right: -100%;
+        right: -100px;
+        margin-top: 50px;
+
+icon(filename, filename2)
+  margin-bottom: 20px;
+  display: block;
+  background: url(filename);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  &:hover
+  &:focus
+      background: url(filename2);
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: .7s;
+
+
+
+.process__content__items__item{
+display: flex;
+flex-flow: column;
+justify-content:space-between;
+width: 200px;
+align-items: center;
+margin: 0 auto;
+
+
+&__text{
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #dddddd;
+  margin-bottom: 10px;
+  width: 200px;
+  line-height: 2;
+}
+
+  &__ideas {
+    icon("../img/process_icons/ideas.png","../img/process_icons/ideas2.png")
+    right__line()
+  }
+  &__rapid {
+    icon("../img/process_icons/rapid.png","../img/process_icons/rapid2.png");
+    right__line()
+  }
+  &__magic {
+    icon("../img/process_icons/magic.png","../img/process_icons/magic2.png");
+    right__line()
+  }
+  &__award {
+    icon("../img/process_icons/award.png","../img/process_icons/award2.png");
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px)
+{
+    .process__content{
+      width: 1000px;
+      &__header{
+        margin-top: 60px;
+      }
+    }
+    .process__content__items{
+      width: 1000px;
+    }
+    .process{
+      min-height: 430px;
+      margin-bottom: 50px;
+    }
+
+      .process__content__items__item{
+        width: 100px;
+        &__ideas, &__rapid, &__magic{
+          &:after{
+            width: 135px;
+            right: -75px;
+          }
+        }
+      }
+}
+
+@media (min-width: 767px) and (max-width: 1023px)
+{
+  .process__content{
+    width: 700px;
+    &__header{
+      margin-top: 60px;
+    }
+  }
+  .process__content__items{
+    width: 700px;
+  }
+  .process{
+    min-height: 430px;
+    margin-bottom: 50px;
+  }
+
+  .process__content__items__item{
+    width: 100px;
+    &__ideas, &__rapid, &__magic{
+      &:after{
+        width: 60px;
+        right: -40px;
+      }
+    }
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px)
+{
+  .process__content{
+    width: 400px;
+    &__header{
+      margin-top: 60px;
+    }
+  }
+  .process__content__items{
+    width: 400px;
+  }
+  .process{
+    min-height: 430px;
+    margin-bottom: 10px;
+  }
+
+  .process__content__items__item{
+          width: 200px;
+          margin-bottom: 10px;
+          &__rapid{
+          &:after{
+              display: none;
+          }
+        }
+          &__ideas, &__magic{
+            &:after{
+              width: 70px;
+              right: -50px;
+            }
+          }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 424px)
+{
+  .process__content{
+    width: 300px;
+    &__header{
+      margin-top: 60px;
+    }
+  }
+  .process__content__items{
+    width: 300px;
+  }
+  .process{
+    min-height: 430px;
+    margin-bottom: 10px;
+  }
+
+  .process__content__items__item{
+          width: 200px;
+          margin-bottom: 10px;
+          &__rapid, &__ideas, &__magic{
+          &:after{
+              display: none;
+          }
+        }
+  }
+
+      .process__content__header{
+        &:after, &:before
+        {
+          width: 50px;
+        }
+      }
+}

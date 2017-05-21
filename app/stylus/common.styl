@@ -1,0 +1,21 @@
+header_style(text_color, line_color, line_width, line_height)
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: text_color;
+    &:before
+    &:after
+          content: "";
+          display: inline-block;
+          vertical-align: middle;
+          width: line_width;
+          height: 2px;
+          background-color: line_color;
+          position: relative;
+      &:before
+          margin-left: -100%;
+          left: -14px;
+      &:after
+          margin-right: -100%;
+          right: -14px;
