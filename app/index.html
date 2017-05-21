@@ -5,10 +5,11 @@
     <title>Loom</title>
     <link rel="stylesheet" href="css/main.css"> <!-- Подключаем CSS -->
     <link rel="stylesheet" href="css/normalize.css">
-    <script src="js/fonts.js"></script>
-    <script>loadFont('Raleway', 'css/woff.css', 'css/woff2.css')</script>
+    <link rel="stylesheet" href="css/woff.css">
+    <link rel="stylesheet" href="css/woff2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/fonts.js"></script>
+    <script src="js/libs.min.js"></script>
 </head>
 <body>
 
@@ -18,13 +19,41 @@
       <div class="navbar__container__logo" href="#"><img src="img/logo.png" title="logo"></div>
       <ul class="navbar__container__nav">
       <li><a class="navbar__container__nav__item" href="#">home</a></li>
-      <li><a class="navbar__container__nav__item" href="#">pages</a></li>
-      <li><a class="navbar__container__nav__item" href="#">journal</a></li>
+      <li><a class="navbar__container__nav__item" href="#">pages</a>
+            <ul class="navbar__container__nav__item__inside">
+            <li><a class="navbar__container__nav__item__inside__item" href="/">pages 1</a></li>
+            <li><a class="navbar__container__nav__item__inside__item" href="/">pages 2</a></li>
+            </ul>
+      </li>
+      <li><a class="navbar__container__nav__item" href="#">journal</a>
+          <ul class="navbar__container__nav__item__inside">
+          <li><a class="navbar__container__nav__item__inside__item" href="/">journal 1</a></li>
+          <li><a class="navbar__container__nav__item__inside__item" href="/">journal 2</a></li>
+          <li><a class="navbar__container__nav__item__inside__item" href="/">journal 3</a></li>
+          </ul>
+      </li>
       <li><a class="navbar__container__nav__item" href="#">portfolio</a></li>
       <li><a class="navbar__container__nav__item" href="#">features</a></li>
       <li><a class="navbar__container__nav__item" href="#">contact</a></li>
     </ul>
   </div>
+</div>
+</div>
+
+<div class = "adaptive-menu">
+  <div class = "adaptive-menu__container">
+    <div class="navbar__container__logo" href="#"><img src="img/logo.png" title="logo"></div>
+    <ul class="navbar__container__nav">
+    <li><a class="navbar__container__nav__item" href="#">menu</a>
+      <ul class="navbar__container__nav__item__inside">
+      <li><a class="navbar__container__nav__item__inside__item" href="/">home</a></li>
+      <li><a class="navbar__container__nav__item__inside__item" href="/">pages</a></li>
+      <li><a class="navbar__container__nav__item__inside__item" href="/">journal</a></li>
+      <li><a class="navbar__container__nav__item__inside__item" href="/">portfolio</a></li>
+      <li><a class="navbar__container__nav__item__inside__item" href="/">features</a></li>
+      <li><a class="navbar__container__nav__item__inside__item" href="/">contact</a></li>
+      </ul>
+    </li>
 </div>
 </div>
 
@@ -43,14 +72,13 @@
     </div>
 
     <div id="prev-next-btns">
-    <div class = "slider_btn slider_btn__prev" id="prev-btn"><</div>
-    <div class = "slider_btn slider_btn__next" id="next-btn">></div>
+    <div class = "slider_btn slider_btn__prev" id="prev-btn">&lt </div>
+    <div class = "slider_btn slider_btn__next" id="next-btn">&gt</div>
     </div>
 
 </div>
 </div>
-<script src="js/main.js"></script>
-
+<script src = "js/main.js"></script>
 <div class="do">
     <div class ="do__header"> What we do </div>
     <div class="do__block">
@@ -198,7 +226,6 @@
   </div>
 </div>
 </body>
-
 <footer class="footer">
   <div class="footer__text">© 2013 Loom. All rights reserved. Theme by elemis.</div>
 </div>
